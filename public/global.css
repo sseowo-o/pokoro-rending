@@ -14,13 +14,14 @@ body {
     --font-size-20: 1.25rem;
     --font-size-24: 1.5rem;
     --font-size-32: 2rem;
+    --font-size-40: 2.5rem;
   
     /* Colors */
     --color-black: #000;
     --color-white: #fff;
     --color-main-100: #f8e581;
     --color-main-300: #FFF7CC;
-    --color: #4d4d4d;
+    --color-gray: #4d4d4d;
     --color-lightgray: #d0d0d0;
     --color-darkslategray: #333;
   
@@ -29,11 +30,13 @@ body {
     --gap-16: 1rem;
     --gap-24: 1.5rem;
     --gap-40: 2.5rem;
+    --gap-80: 5rem;
     --gap-160: 10rem;
   
     /* Border radiuses */
     --br-24: 24px;
     --br-circle: 999px;
+
   }
 
   @media screen and (max-width: 1400px) {
@@ -42,6 +45,7 @@ body {
       --font-size-20: 1.125rem;
       --font-size-24: 1.25rem;
       --font-size-32: 1.75rem;
+      --font-size-40: 2rem;
     }
 }
 @media screen and (max-width: 768px) {
@@ -50,6 +54,9 @@ body {
     --font-size-20: 1rem;
     --font-size-24: 1.125rem;
     --font-size-32: 1.5rem;
-  
+    --font-size-40: 1.75rem;
+    /* Gaps */
+    --gap-80: 2.5rem;
+    --gap-160: 5rem;
   }
 }
