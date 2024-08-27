@@ -13,7 +13,7 @@
   </head>
 
   <body>
-  <div class="pc">
+
     <section id="main">
       <div class="main-tit">
         <h1 class="tm-title">
@@ -23,6 +23,50 @@
         <div class="main-subtit">Ignite creative thinking</br>with an Interactive learning mate</div>
         <button class="main-btn">JOIN THE WAITLIST</button>
       </div>
+      <!-- 팝업 창 -->
+      <div class="popup-bg"></div>
+      <div class="popup">
+        <button class="close-btn" onclick="closePopup()"></button>
+
+        <div id="mc_embed_shell">
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+            #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+        <form action="https://neosmartpen.us11.list-manage.com/subscribe/post?u=d3ff8864b2e1eb8d95901ccc1&amp;id=f234a9e201&amp;f_id=0007d6e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div>
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+            </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_d3ff8864b2e1eb8d95901ccc1_f234a9e201" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
+        </div>
+    </form>
+    </div>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+
+      </div>
+
+      <script>
+          // 팝업 열기 함수
+          function openPopup() {
+              document.querySelector('.popup-bg').style.display = 'block';
+              document.querySelector('.popup').style.display = 'block';
+          }
+
+          // 팝업 닫기 함수
+          function closePopup() {
+              document.querySelector('.popup-bg').style.display = 'none';
+              document.querySelector('.popup').style.display = 'none';
+          }
+
+          // 버튼 클릭 이벤트 리스너 추가
+          document.querySelector('.main-btn').addEventListener('click', openPopup);
+      </script>
     </section>
 
     <section id="sec02" class="inner">
@@ -98,7 +142,8 @@
           </div>
         </div>
         <div class="img-desc">
-          <img src="./image/Group 39.png" alt="">
+          <img class="pc" src="./image/Group 39.png" alt="">
+          <img class="mo" src="./image/Group 39_mo.png" alt="">
 <!--           <div class="pokoro-desc screen ">
 
             <div class="desc-text lft Wifi">
@@ -185,7 +230,7 @@
                   Child’s Boundless Energy?&nbsp;<br>Met!
                 </h3>
                 <div class="txt">
-                  Supercharge conversation&nbsp;<br> with Welcoming&nbsp;<br> Face & Friendly Voice.
+                  Supercharge conversation&nbsp;<br> with a Welcoming Face&nbsp;<br>& Friendly Voice.
                 </div>
               </div>
               <div class="img">
@@ -274,7 +319,7 @@
           </h2>
           <div class="line"></div>
           <div class="txt">
-            POKORO makes learning more engaging through touch, talking and
+            POKORO makes learning more engaging through touch, speech and
             even sight.
           </div>
         </div>
@@ -335,7 +380,7 @@
       <article class="inner cont03">
         <div class="description">
           <h2>
-            Flashcard&nbsp;<br><span style="font-size: 2rem;">to Jump Start Creativity Engine</span>
+            POKORO Flashcards&nbsp;<br><span style="font-size: 2rem;">to Jump Start Creativity Engine</span>
             </p>
           </h2>
           <div class="line"></div>
@@ -401,7 +446,7 @@
       <div class="inner description">
         <h2>
           Reviews
-          <p style="font-size: 2rem;">from POKORO Beta Tester</p>
+          <p style="font-size: 2rem;">from POKORO Beta Testers</p>
         </h2>
       </div>
       <div class="inner reviews pc">
@@ -425,7 +470,7 @@
             </h2>
             <div class="line"></div>
             <div class="txt">
-              Since 2009, Neolab Convergence has been creating educational tech solutions. Our Smartpen and Sound Pen transform learning into an interactive and efficient experience. Blending traditional and digital learning, we empower students and teachers around the world.
+              Since 2009, Neolab Convergence has been a the forefront of creating educational tech solutions.  Our Smartpen and Sound Pen transform learning into an interactive and effective experience by blending traditional and digital methods, empowering students and teachers around the world.
             </div>
           </div>
           <div class="description">
@@ -440,7 +485,7 @@
               During COVID-19, remote learning became the norm, and Steven Lee, a father of two young daughters, saw firsthand its challenges. This sudden shift deprived many children of interactive learning opportunities and delayed the development of crucial skills. 
             </div>
             <div class="txt">
-              Determined to find a solution, Sang Gyu envisioned a device that could bridge the gap—a screen-free, interactive device with communication ability. He integrated GPT's conversational capabilities, ensuring the device could engage children in meaningful dialogue. The result was Pokoro.
+              Determined to find a solution, Steven Lee envisioned a device that could bridge the gap—a screen-free, interactive device with communication ability. He integrated GPT's conversational capabilities, ensuring the device could engage children in meaningful dialogue. The result was Pokoro.
             </div>
           </div>
         </div>
@@ -467,28 +512,28 @@
                 <input type="checkbox" name="accordion-1" id="cb2">
                 <label for="cb2" class="tab__label">What's included with Pokoro?</label>
                 <div class="tab__content">
-                  <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                  <p>Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
                 </div>
               </div>
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb3">
                 <label for="cb3" class="tab__label">What age is Pokoro suitable for?</label>
                 <div class="tab__content">
-                  <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                  <p>Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
                 </div>
               </div>
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb4">
                 <label for="cb4" class="tab__label">What makes Pokoro special?</label>
                 <div class="tab__content">
-                  <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                  <p>Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
                 </div>
               </div>
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb5">
                 <label for="cb5" class="tab__label">How do I set up a Pokoro?</label>
                 <div class="tab__content">
-                  <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                  <p>Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
                 </div>
               </div>
             </article>
@@ -529,7 +574,7 @@
         </div>
         <div class="copy">
           <ul>
-            <li>Contact : support@pokoro.global.com </li>
+            <li>Contact : support_pokoro@neolab.net </li>
             <li>Address : #1501, Mario Tower, Guro-Dong 222-12, Guro-Gu, Seoul, Korea 08389</li>
           </ul>
           <p>Copyright © 2024NeoLAB Convergence Inc.</p>
@@ -537,6 +582,6 @@
       </div>
 
     </footer>
- </div>
+
 </body>
 </html>
